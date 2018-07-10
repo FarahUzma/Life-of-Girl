@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+
+    android:layout_width="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:context=".SecondActivity" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="133dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBox3"
+        android:onClick="onClick1"
+        android:radius="5dp"
+        android:text="Find"
+        android:textColor="#fff"
+        android:theme="@style/MyButton" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox2"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/layout_bg"
+        android:text="Safe Heavens"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/checkBox3"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-124dp"
+        android:background="@drawable/layout_bg"
+        android:text="Police Station"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/layout_bg"
+        android:text="Washroom"
+        android:textStyle="bold" />
+
+    <include
+        layout="@layout/bottomsheet_layout"
+        android:layout_height="495dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"></include>
+
+</RelativeLayout>
+
+
+
